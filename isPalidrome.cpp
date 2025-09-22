@@ -6,6 +6,7 @@ bool isPalindrome(string str)
 int length = str.length(); 
 for (int i = 0; i < length / 2; i++) {
     str[i] = std::tolower(str[i]);
+    // or use std::toupper(str[i])
     if (str[i] != str[length - 1 - i]) {
          return false;
     } // if    
