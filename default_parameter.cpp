@@ -20,7 +20,7 @@ int main()
   cout << "Where are you from? \n";
   string country;
   cin >> country;
-  myFunction(country);
+  myFunction();
 }
 
 void happyBirthday(string name, int age)
