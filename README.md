@@ -8,4 +8,6 @@ I feel the class pace is quite slow, so that I usually study slides ahead and pr
 During this time, I learned about C++ syntax, familiarized myself with control structures, user-defined functions, and some typical C libraries (iostream, cmath, iomanip, etc.) 
 
 The most essential thing I learned was about functions: 
-  - 
+  - How to declare a function? How to organize the function's declaration and definition
+  - Void and value-returning functions
+  - Default and multiple parameters functions
