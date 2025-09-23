@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// Global variable
+// Global variable is used across the file:
 char op;
 int num;
 
@@ -51,9 +51,9 @@ int myPrintingFunction(int num)
 }
 int myRightTriangle(int num)
 {
-  for (int i = 0; i <= num; i++)
+  for (int i = 0; i <= num; i++) //counting the number of rows
   {
-    for (int j = 0; j < i; j++)
+    for (int j = 0; j < i; j++) //printing the symbol * with respect to the number of the line
     {
       cout << "*";
     }
@@ -62,9 +62,9 @@ int myRightTriangle(int num)
 }
 int myReverseRightTriangle(int num)
 {
-  for (int i = 0; i <= num; i++)
+  for (int i = 0; i <= num; i++)//counting the number of rows
   {
-    for (int j = num; j > i; j--)
+    for (int j = num; j > i; j--)//printing the symbol * with respect to the number of the line
     {
       cout << "#";
     }
