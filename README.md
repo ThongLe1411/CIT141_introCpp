@@ -4,3 +4,8 @@ It's been several weeks since I learn my first college-level programming course.
 ## Self-studying most of the time
 I feel the class pace is quite slow, so that I usually study slides ahead and practice on Visual Studio Code and review syntax on [Web3School](https://www.w3schools.com/) 
 
+### Week 1 - Week 6:
+During this time, I learned about C++ syntax, familiarized myself with control structures, user-defined functions, and some typical C libraries (iostream, cmath, iomanip, etc.) 
+
+The most essential thing I learned was about functions: 
+  - 
