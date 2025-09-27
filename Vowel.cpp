@@ -17,8 +17,10 @@ int main() {
         cin.get(ch); // get every single character in the sequence 
     }
     
-    if(numberOfVowel > 0 )cout << ch << " has " << numberOfVowel << " vowels "; 
-    else cout << ch << " has no vowels !"; 
+  if (numberOfVowel > 0)
+    cout << "The sequence has " << numberOfVowel << " vowels ";
+  else
+    cout << " The sequence has no vowels !";
     return 0;
 }
 bool isVowel(char ch){ //verifying
