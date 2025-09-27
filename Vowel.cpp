@@ -14,9 +14,11 @@ int main() {
     while(ch != '\n'){ // counting the number of vowels in a sentence
         if(isVowel()) 
             numberOfVowel++; 
-        cin.get(ch); 
+        cin.get(ch); // get every single character in the sequence 
     }
-    //cout << ch << " is a vowel: " << isVowel(ch) << endl;
+    
+    if(numberOfVowel > 0 )cout << ch << " has " << numberOfVowel << " vowels "; 
+    else cout << ch << " has no vowels !"; 
     return 0;
 }
 bool isVowel(char ch){ //verifying
