@@ -6,6 +6,8 @@ double circleArea(double radius);
 double rectangleArea(double lenght, double width);
 double cylinderVolume(double radius, double height);
 double cylinderArea(double radius, double height);
+double circleCircumference(double radius)
+
 
 const double PI = 3.14159; // constant are usually capitalized
 
@@ -23,8 +25,9 @@ int main()
   cout << "2. Calculate the Area of a rectangle \n";
   cout << "3. Calculate the Volume of a cylinder \n";
   cout << "4. Calculate the Area of a cylinder \n";
+  cout << "5. Calculate the Circumference of a circle \n"; 
 
-  cout << "Enter 1, 2, 3, 4 to perform your calculation\n "
+  cout << "Enter 1, 2, 3, 4, 5 to perform your calculation\n "
        << "Or enter -1 to terminate the program: ";
   // program input
   cin >> choice;
@@ -59,6 +62,11 @@ int main()
       cin >> height;
       cout << "The area of the cylinder is: " << cylinderArea(radius, height);
       break;
+    case 5: 
+      cout << "Enter the radius of your circle: "; 
+      cin >> radius; 
+      cout << "The Circumference of your circle is: " << circleCircumference(radius); 
+      break; 
     default:
       cout << "Your input is not match with our program \n"
            << "Please enter again or -1 to terminate the program: ";
@@ -85,4 +93,7 @@ double cylinderVolume(double radius, double height)
 double cylinderArea(double radius, double height)
 {
   return 2 * PI * radius * radius + 2 * PI * radius * height;
+}
+double circleCircumference(double radius){
+  return 2*radius*PI;
 }
