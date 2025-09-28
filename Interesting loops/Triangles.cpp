@@ -25,10 +25,11 @@ int main()
   switch (op)
   {
   case '1':
-    myPrintingFunction(num);
+    myPrintingFunction(num); // print from 0 to the number entered
     break;
   case '2':
-    myRightTriangle(num);
+    myRightTriangle(num); 
+    // print a right triangle with the number entered as the number of the diagonal
     break;
   case '3':
     myReverseRightTriangle(num);
