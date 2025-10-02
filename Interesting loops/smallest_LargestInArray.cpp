@@ -2,8 +2,9 @@
 #include <iomanip>
 using namespace std;
 
+//function declaration
 int smallestIndex(int list[], int size);
-int largestIndex(int list[], int size);
+int lastLargestIndex(int list[], int size);
 void print(int list[], int size);
 int main()
 {
@@ -19,17 +20,23 @@ int main()
     cin >> array[i];
     cout << endl;
   }
-
   print(array, arraySize);
   smallestIndex(array, arraySize);
+//call out the smallest value and its position in the array
+  cout << "The position of the first occurrence of the smallest element in the list is: " 
+    << smallestIndex(array, arraySize) << endl;
+  cout << "The smallest element in the list is: " 
+    << array[smallestIndex(array, arraySize)] << endl;
 
-  cout << "The position of the first occurrence of the smallest element in the list is: " << smallestIndex(array, arraySize) << endl;
-  cout << "The smallest element in the list is: " << array[smallestIndex(array, arraySize)] << endl;
-
-  cout << "The position of the first occurrence of the largest element in the list is: " << largestIndex(array, arraySize) << endl;
-  cout << "The largest element in the list is: " << array[largestIndex(array, arraySize)];
+  //call out the largest value and its position in the array
+  cout << "The position of the first occurrence of the largest element in the list is: " 
+    << lastLargestIndex(array, arraySize) << endl;
+  cout << "The largest element in the list is: " 
+    << array[lastLargestIndex(array, arraySize)];
   return 0;
 }
+
+// function definition
 void print(int list[], int size)
 {
   for (int i = 0; i < size; i++)
@@ -50,7 +57,7 @@ int smallestIndex(int list[], int size)
   }
   return minIndex;
 }
-int largestIndex(int list[], int size)
+int lastLargestIndex(int list[], int size)
 {
   int largestIndex = 0;
   for (int i = 0; i < size; i++)
